@@ -9,59 +9,26 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
 <header>
   <h1 class="topic">
-    <span class="material-icon">loop</span>
-    Сегодня изучаем: Циклы в C#
+    Выберите дату
   </h1>
-  <button id="toggle-letters" title="Убрать фоновые буквы">ABC</button>
 </header>
 
 
 <main>
-<div id="floating-letters"></div>
-
-
-
-
-  <div class="task">
-    <div class="task-number">Теория</div>
-    <h2>Циклы в C#</h2>
-    <div>Материал для изучения:
-      <a href="https://metanit.com/sharp/tutorial/2.6.php" target="_blank">Metanit — Циклы</a>
-    </div>
-  </div>
-
-  <div class="red-task task">
-    <div class="task-number">Ахтунг!</div>
-    <h2>Не пишем все в предыдущем проекте!</h2>
-    <div>Создаем новое консольное приложение (.Net Framework). В названии указываем Фамилия+Дата</div>
-    <div class="hint">Пример: <span id="example-name">Primak</span></div>
-  </div>
-
-  <div class="task">
-    <div class="task-number">Задание 1</div>
-    <h2>Заголовок</h2>
-    <div class="block-title">Требования:</div>
-    <ol>
-      <li>Требование <b>1</b><ul>
-      <li>Требование</li>
-      <li>Требование</li>
-    </ul></li>
-      <li>Требование 2</li>
-    </ol>
-    <div class="block-title">Подсказка:</div>
-    <div class="hint">Левое яйцо больше правого</div>
-    <div class="block-title">Вывод в консоль:</div>
-    <div class="console">1
-2
-3
-</div>
+    <main style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:70vh;">
+  <div class="task" style="max-width:400px; text-align:center;">
+    <h2>Выберите дату задания</h2>
+    <input type="date" id="taskDate" style="font-size:24px; padding:10px; width:100%; margin-top:16px;">
+    <button id="goTask" style="margin-top:16px; font-size:20px; padding:10px 20px; cursor:pointer; background:#5a1ebf; color:white; border:none; border-radius:8px;">
+      Перейти к заданию
+    </button>
+    <div id="topicInfo" style="margin-top:20px; font-size:18px; color:var(--text-secondary); min-height:60px;"></div>
+    <div id="message" style="color:red; margin-top:12px; font-size:16px;"></div>
   </div>
 </main>
-
-<footer>тут ничего нет</footer>
-<script src="./js/script.js"></script>
+</main>
+<script src="./js/redirect.js"></script>
 </body>
 </html>
