@@ -28,7 +28,22 @@
   align-items: center;
   padding: 20px 24px;
 }
-
+input[type="date"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--accent);   /* фиолетовый текст */
+  background: rgba(249, 249, 249, 0.92); /* полупрозрачный фон карточки */
+  border: 2px solid var(--accent-color); /* тонкая рамка */
+  border-radius: 12px;           /* скругление */
+  padding: 10px 14px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  outline: none; 
+  box-shadow: 0 0 6px rgba(126,34,206,0.5);
+  border-color: var(--accent-color);             /* убираем стандартный outline */
+  cursor: pointer;
+}
 #toggle-letters {
   position: absolute;
   right: 16px;
